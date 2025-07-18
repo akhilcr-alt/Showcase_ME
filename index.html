@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Open Graph Tags -->
+    <title>Akhil Curam | Strategic Growth Marketing Leader</title>
+    <meta name="description" content="Over 13 years of experience driving growth for B2B and B2C brands in FMCG and FinTech. Specializing in GTM strategy, brand positioning, and data-driven marketing.">
+    <meta property="og:title" content="Akhil Curam | Strategic Growth Marketing Leader">
+    <meta property="og:description" content="Portfolio of Akhil Curam, showcasing expertise in strategic marketing, product launches, and cross-functional leadership.">
+    <!-- UPDATE: Replace this placeholder with a URL to your professional headshot (e.g., from LinkedIn). Recommended size: 1200x630px. -->
+    <meta property="og:image" content="https://placehold.co/1200x630/1A1A1A/E0E0E0?text=AC">
+    <meta property="og:url" content="https://akhilcuram.dev"> <!-- UPDATE: Replace with your actual domain when you deploy. -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Markdown Parsing Library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Custom Brand Styles -->
+    <style>
+        :root {
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Lato', sans-serif;
+            /* UPDATE: New Black & White Theme */
+            --color-bg-primary: #1A1A1A;      /* Charcoal */
+            --color-bg-secondary: #2C2C2C;   /* Lighter Dark Gray */
+            --color-text-primary: #E0E0E0;   /* Off-white */
+            --color-text-secondary: #a0aec0; /* Lighter gray for subtitles */
+            --color-accent-green: #34D399;   /* Vibrant Green */
+            --color-accent-orange: #BE5103;  /* Burnt Orange (User's choice) */
+            --color-border: #4A5568;       /* Gray for borders */
+        }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--color-text-primary);
+        }
+        .bg-primary { background-color: var(--color-bg-primary); }
+        .bg-secondary { background-color: var(--color-bg-secondary); }
+        .text-primary { color: var(--color-text-primary); }
+        .text-secondary { color: var(--color-text-secondary); }
+        .text-accent-green { color: var(--color-accent-green); }
+        .bg-accent-orange { background-color: var(--color-accent-orange); }
+        .ring-accent-green { --tw-ring-color: var(--color-accent-green); }
+        .border-color { border-color: var(--color-border); }
+        
+        .prose a { color: var(--color-accent-green); text-decoration: underline; }
+        .prose blockquote { border-left-color: var(--color-accent-green); }
+        
+        .expandable-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
+        .expand-icon { transition: transform 0.3s ease-in-out; }
+        .expand-icon.rotated { transform: rotate(90deg); }
+        
+        .project-tab {
+            transition: all 0.3s ease;
+            filter: grayscale(100%) brightness(0.7);
+            opacity: 0.7;
+        }
+        .project-tab.active {
+            filter: grayscale(0%) brightness(1);
+            opacity: 1;
+            transform: scale(1.1);
+            border-bottom-color: var(--color-accent-green);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-secondary fixed top-0 left-0 right-0 z-50 shadow-lg border-b border-color transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white" aria-label="Navigate to top of the page">
+                Akhil Curam
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#journey" class="text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Journey</a>
+                <a href="#projects" class="text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Projects</a>
+                <a href="#insights" class="text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Insights</a>
+                <a href="#contact" class="bg-accent-orange text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity duration-300 font-semibold">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none" aria-label="Open main menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#journey" class="block text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Journey</a>
+            <a href="#projects" class="block text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Projects</a>
+            <a href="#insights" class="block text-text-primary hover:text-accent-green transition-colors duration-300 font-semibold">Insights</a>
+            <a href="#contact" class="block bg-accent-orange text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity duration-300 mt-2 font-semibold">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Home / Hero -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+                <div class="md:w-3/5 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Strategic Growth Marketing Leader
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl max-w-2xl text-text-secondary">
+                        13+ years driving B2B & B2C growth. Data driven and commercially focused. Proven leader in uniting cross-functional teams through empathy to deliver outcomes that move the needle.
+                    </p>
+                     <!-- About Me Blurb -->
+                    <div class="mt-6 bg-secondary p-4 rounded-lg shadow-sm max-w-2xl border border-color">
+                        <p class="text-sm text-text-secondary">
+                           As an immigrant who has built a career across continents, I bring a unique perspective on resilience and adaptation. 
+                           <a href="#" id="read-more-about" class="text-accent-green font-bold hover:underline" aria-label="Read more about my story">Read more about my story...</a>
+                        </p>
+                    </div>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <!-- UPDATE: Replace '#' with your actual profile URLs -->
+                        <a href="#" aria-label="View LinkedIn Profile" class="text-text-secondary hover:text-accent-green transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg></a>
+                        <a href="#" aria-label="View YouTube Channel" class="text-text-secondary hover:text-accent-green transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L15,19C12.81,19 11.2,18.84 10.17,18.56C9.27,18.31 8.69,17.73 8.44,16.83C8.31,16.36 8.22,15.73 8.16,14.93C8.09,14.13 8.06,13.44 8.06,12.84L8,12C8,9.81 8.16,8.2 8.44,7.17C8.69,6.27 9.27,5.69 10.17,5.44C10.64,5.31 11.27,5.22 12.07,5.16C12.87,5.09 13.56,5.06 14.16,5.06L15,5C17.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"></path></svg></a>
+                        <a href="#" aria-label="View Instagram Profile" class="text-text-secondary hover:text-accent-green transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg></a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
+                    <img src="https://placehold.co/400x400/2C2C2C/E0E0E0?text=AC" alt="Akhil Curam headshot placeholder" class="rounded-full shadow-2xl w-64 h-64 md:w-80 md:h-80 object-cover ring-4 ring-accent-green">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Career Journey -->
+        <section id="journey" class="py-20 lg:py-32 bg-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">My Journey</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-text-secondary">A timeline of professional experience. Click the arrow on any role to see key projects.</p>
+                </div>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-color h-full border" style="left: 50%"></div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div><div class="z-20 flex items-center order-1 bg-accent-orange shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white">1</h1></div>
+                        <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-bold text-text-primary text-xl">Senior Marketing Strategy Lead – APAC</h3>
+                                    <p class="text-sm font-semibold text-accent-green">WEX Inc. (SaaS/FinTech)</p>
+                                    <p class="text-sm leading-snug tracking-wide text-text-secondary my-2">June 2023 – Present</p>
+                                </div>
+                                <button class="expand-button p-1" aria-label="Show key projects"><svg class="w-5 h-5 expand-icon text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                            </div>
+                            <div class="expandable-content"><ul class="list-disc list-inside text-sm text-text-secondary mt-3 space-y-1"><li>Pay at pump</li><li>Driver app</li><li>AI based segmentation</li><li>Churn rate analysis</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div><div class="z-20 flex items-center order-1 bg-accent-orange shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto text-white font-semibold text-lg">2</h1></div>
+                        <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
+                             <h3 class="font-bold text-text-primary text-xl">Strategy and Innovation Manager</h3>
+                             <p class="text-sm font-semibold text-accent-green">McCain Foods (FMCG)</p>
+                             <p class="text-sm leading-snug tracking-wide text-text-secondary my-2">Dec 2022 – May 2023</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                         <div class="order-1 w-5/12"></div><div class="z-20 flex items-center order-1 bg-accent-orange shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white">3</h1></div>
+                        <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-bold text-text-primary text-xl">Product Marketing Manager</h3>
+                                    <p class="text-sm font-semibold text-accent-green">George Weston Foods (FMCG)</p>
+                                    <p class="text-sm leading-snug tracking-wide text-text-secondary my-2">Mar 2019 – Dec 2021</p>
+                                </div>
+                                <button class="expand-button p-1" aria-label="Show key projects"><svg class="w-5 h-5 expand-icon text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                            </div>
+                            <div class="expandable-content"><ul class="list-disc list-inside text-sm text-text-secondary mt-3 space-y-1"><li>Japan Launch sausages</li><li>Crafted cuts</li><li>Platters</li><li>Artusi Brand Launch</li><li>DAM Optimisation</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div><div class="z-20 flex items-center order-1 bg-accent-orange shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto text-white font-semibold text-lg">4</h1></div>
+                        <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-bold text-text-primary text-xl">Brand & R&D Roles</h3>
+                                    <p class="text-sm font-semibold text-accent-green">Coca-Cola Amatil (Beverage)</p>
+                                    <p class="text-sm leading-snug tracking-wide text-text-secondary my-2">Dec 2014 – Oct 2018</p>
+                                </div>
+                                <button class="expand-button p-1" aria-label="Show key projects"><svg class="w-5 h-5 expand-icon text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                            </div>
+                            <div class="expandable-content"><ul class="list-disc list-inside text-sm text-text-secondary mt-3 space-y-1"><li>Provital (Market Diagnosis & US Launch)</li><li>Juice Optimisation</li><li>New Line: Fruit cups & Rice pudding</li><li>Perfect Fruit (New Channel)</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div><div class="z-20 flex items-center order-1 bg-accent-orange shadow-xl w-8 h-8 rounded-full"><h1 class="mx-auto font-semibold text-lg text-white">5</h1></div>
+                        <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-bold text-text-primary text-xl">R&D – Packaging Seasonal & Gifting</h3>
+                                    <p class="text-sm font-semibold text-accent-green">Mondelez International (Confectionery)</p>
+                                    <p class="text-sm leading-snug tracking-wide text-text-secondary my-2">2012 – 2014</p>
+                                </div>
+                                <button class="expand-button p-1" aria-label="Show key projects"><svg class="w-5 h-5 expand-icon text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                            </div>
+                            <div class="expandable-content"><ul class="list-disc list-inside text-sm text-text-secondary mt-3 space-y-1"><li>LED based packaging</li><li>Egg bag optimisation</li><li>Breakage rate analysis</li><li>Launch of Boost in Brazil</li></ul></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects -->
+        <section id="projects" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">Project Showcase</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-text-secondary">Click a logo to see key projects from my time at each company.</p>
+                </div>
+                
+                <div id="project-showcase" class="max-w-5xl mx-auto">
+                    <div id="project-tabs" class="flex justify-center items-center gap-8 md:gap-12 mb-8 border-b-2 border-color pb-4">
+                        <button class="project-tab active" data-tab="wex"><img src="https://logo.clearbit.com/wexinc.com" alt="WEX Inc. Logo" class="h-8 md:h-10" onerror="this.onerror=null; this.parentElement.innerHTML = 'WEX';"></button>
+                        <button class="project-tab" data-tab="abf"><img src="https://logo.clearbit.com/gwf.com.au" alt="George Weston Foods Logo" class="h-10 md:h-12" onerror="this.onerror=null; this.parentElement.innerHTML = 'ABF/DON';"></button>
+                        <button class="project-tab" data-tab="spc"><img src="https://logo.clearbit.com/cocacolaamatil.com" alt="Coca-Cola Amatil Logo" class="h-12 md:h-14" onerror="this.onerror=null; this.parentElement.innerHTML = 'Coca-Cola Amatil';"></button>
+                        <button class="project-tab" data-tab="mondelez"><img src="https://logo.clearbit.com/mondelezinternational.com" alt="Mondelez Logo" class="h-10 md:h-12" onerror="this.onerror=null; this.parentElement.innerHTML = 'Mondelez';"></button>
+                        <button class="project-tab" data-tab="mba"><img src="https://logo.clearbit.com/mbs.edu" alt="Melbourne Business School Logo" class="h-10 md:h-12" onerror="this.onerror=null; this.parentElement.innerHTML = 'MBA';"></button>
+                    </div>
+
+                    <div id="project-panels">
+                        <div class="project-panel active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-content="wex">
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">AI based segmentation</h4><p class="text-sm text-text-secondary">Pioneered a new segmentation model, leading to significant cost savings and improved campaign targeting.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Pay at pump</h4><p class="text-sm text-text-secondary">Successfully launched a key consumer-facing feature, driving adoption and engagement.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Driver app</h4><p class="text-sm text-text-secondary">Led marketing efforts for the driver app, enhancing user experience and data collection capabilities.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Churn rate analysis</h4><p class="text-sm text-text-secondary">Identified key drivers of customer churn, informing retention strategies and product improvements.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">A/B testing emails</h4><p class="text-sm text-text-secondary">Systematically improved email campaign performance through rigorous A/B testing.</p></div>
+                        </div>
+                        <div class="project-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-content="abf">
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Japan Launch sausages</h4><p class="text-sm text-text-secondary">Successfully introduced a core product into a new international market, navigating cultural nuances.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Crafted cuts</h4><p class="text-sm text-text-secondary">Developed a successful business case for a new premium product line based on deep consumer insights.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Platters</h4><p class="text-sm text-text-secondary">Leveraged behavioral insights around social gatherings to develop and market successful platter products.</p></div>
+                        </div>
+                        <div class="project-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-content="spc">
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Provital</h4><p class="text-sm text-text-secondary">Led the successful entry into the pharmacy and health channel, including geographic exploration in the US.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Juice optimisation</h4><p class="text-sm text-text-secondary">Improved juicing process yield by 14%, directly informing future capital expenditure and improving profitability.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">New Line - Fruit cups + Rice pudding</h4><p class="text-sm text-text-secondary">Launched new product lines by leading cross-functional teams and translating consumer insights into viable products.</p></div>
+                        </div>
+                        <div class="project-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-content="mondelez">
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">LED based packaging</h4><p class="text-sm text-text-secondary">Developed innovative packaging that stood out on shelves and resonated with consumer behavior.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Breakage rate analysis</h4><p class="text-sm text-text-secondary">Revealed a lack of statistical rigor in previous analyses, leading to improved processes and commercial outcomes.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Launch of Boost in Brazil</h4><p class="text-sm text-text-secondary">Influenced branding and launch strategy by providing key consumer insights for a new market.</p></div>
+                        </div>
+                        <div class="project-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-content="mba">
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Qantas Loyalty AI Solution</h4><p class="text-sm text-text-secondary">Proposed an innovative AI-driven solution to enhance customer loyalty and engagement for a major airline.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Immobilase VC Pitch</h4><p class="text-sm text-text-secondary">Developed and delivered a compelling venture capital pitch for a new healthcare solution.</p></div>
+                            <div class="bg-secondary rounded-lg shadow-md p-6 border border-color"><h4 class="font-bold text-lg mb-2">Visit Victoria Branding Strategy</h4><p class="text-sm text-text-secondary">Created a comprehensive marketing and branding strategy for a major tourism body.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Insights / Blog -->
+        <section id="insights" class="py-20 lg:py-32 bg-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">Insights & Musings</h2>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-text-secondary">A collection of blogs, case studies, and video discussions on marketing, technology, and leadership.</p>
+                </div>
+                <div id="insights-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-primary p-6 rounded-lg shadow-lg border border-color"><div class="h-4 bg-gray-700 rounded w-3/4 mb-4"></div><div class="h-3 bg-gray-700 rounded w-full mb-2"></div><div class="h-3 bg-gray-700 rounded w-5/6"></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for "About Me" and Blog Posts -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4"><div id="modal-content" class="bg-secondary rounded-lg shadow-2xl w-full max-w-3xl max-h-full overflow-y-auto p-8 relative border border-color"><button id="modal-close" class="absolute top-4 right-4 text-text-secondary hover:text-white" aria-label="Close modal"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button><div id="modal-body" class="prose prose-invert lg:prose-xl max-w-none"></div></div></div>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-secondary">
+        <div class="container mx-auto px-6 py-16">
+            <div class="text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Get In Touch</h2>
+                <p class="mt-4 text-lg max-w-2xl mx-auto text-text-secondary">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious team.</p>
+                <a href="mailto:akhilcr.alt@gmail.com" class="mt-8 inline-block bg-accent-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-opacity duration-300">Say Hello</a>
+            </div>
+            <div class="mt-16 flex justify-center space-x-6">
+                <a href="#" aria-label="View LinkedIn Profile" class="text-text-secondary hover:text-white transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg></a>
+                <a href="#" aria-label="View YouTube Channel" class="text-text-secondary hover:text-white transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L15,19C12.81,19 11.2,18.84 10.17,18.56C9.27,18.31 8.69,17.73 8.44,16.83C8.31,16.36 8.22,15.73 8.16,14.93C8.09,14.13 8.06,13.44 8.06,12.84L8,12C8,9.81 8.16,8.2 8.44,7.17C8.69,6.27 9.27,5.69 10.17,5.44C10.64,5.31 11.27,5.22 12.07,5.16C12.87,5.09 13.56,5.06 14.16,5.06L15,5C17.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"></path></svg></a>
+                <a href="#" aria-label="View Instagram Profile" class="text-text-secondary hover:text-white transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg></a>
+                <a href="mailto:akhilcr.alt@gmail.com" aria-label="Send an Email" class="text-text-secondary hover:text-white transition-colors duration-300"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg></a>
+            </div>
+            <div class="mt-16 border-t border-color pt-8 text-center text-sm text-text-secondary">
+                <p>&copy; <span id="copyright-year"></span> Akhil Curam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
